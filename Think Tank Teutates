@@ -1,0 +1,320 @@
+%%% PREAMBLE %%%
+
+% Strict mode
+
+\RequirePackage[l2tabu, orthodox]{nag} % Warn when using deprecated constructs
+
+% Document class and packages
+
+\documentclass[10pt,a4paper,parskip,fleqn]{scrartcl}
+\usepackage[a4paper,vmargin={30mm},hmargin={30mm}]{geometry} % Page margins
+\usepackage[ngerman]{babel} % New German hyphenation (multilingual support)
+\usepackage[utf8x]{inputenc} % Unicode support
+\usepackage{graphicx} % Graphics support
+\usepackage{enumitem}
+\usepackage{verbatimbox}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{graphicx}
+% Font configuration
+
+\usepackage[sc]{mathpazo} % Use palatino font
+\usepackage[T1]{fontenc} % Use correct font encoding
+\usepackage[babel=true]{microtype} % Micro-typographic optimizations
+\addtokomafont{disposition}{\rmfamily} % Set palatino as heading font
+
+% Section Titles
+
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{§ \thesection{} -- }{0em}{}
+
+% Numbering
+
+\renewcommand*{\labelenumi}{\thesection.\arabic{enumi}}
+\renewcommand*{\labelenumii}{\labelenumi.\arabic{enumii}}
+
+% Easier enumerations
+
+\newcommand{\ol}{\begin{enumerate}[itemsep=-0.2em,topsep=-0.5em]}
+	\newcommand{\lo}{\end{enumerate}}
+\newcommand{\li}{\item}
+
+
+
+%%% TITLEPAGE %%%
+
+\title{\Huge Vereinsstatuten}
+\subject{Think Tank Teutates}
+\date{Stand: 14. November 2022}
+
+
+
+%%% HEADER / FOOTER %%%
+\usepackage{fancyhdr} % Fancy headers
+\usepackage{lastpage} % Page numbering
+
+% Capture title and author
+\makeatletter
+\let\Date\@date
+\makeatother
+
+% Fancy headers configuration
+\pagestyle{fancy}
+\fancyhead{} % Clear all header fields
+\fancyhead[LO,LE]{\bfseries Vereinsstatuten Think Tank Teutates}
+\fancyhead[RO,RE]{\bfseries \Date{}}
+\fancyfoot{} % Clear all footer fields
+\fancyfoot[CO,CE]{Seite \thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Better footer
+\cfoot{Seite \thepage\ von \pageref{LastPage}}
+
+
+%%% MAIN DOCUMENT %%%
+
+\begin{document}
+\begin{verbbox}
+######## ##     ## #### ##    ## ##    ##    ########    ###    ##    ## ##    ## 
+   ##    ##     ##  ##  ###   ## ##   ##        ##      ## ##   ###   ## ##   ##  
+   ##    ##     ##  ##  ####  ## ##  ##         ##     ##   ##  ####  ## ##  ##   
+   ##    #########  ##  ## ## ## #####          ##    ##     ## ## ## ## #####    
+   ##    ##     ##  ##  ##  #### ##  ##         ##    ######### ##  #### ##  ##   
+   ##    ##     ##  ##  ##   ### ##   ##        ##    ##     ## ##   ### ##   ##  
+   ##    ##     ## #### ##    ## ##    ##       ##    ##     ## ##    ## ##    ## 
+   
+    ______   ______     __  __     ______   ______     ______   ______     ______    
+   /\__  _\ /\  ___\   /\ \/\ \   /\__  _\ /\  __ \   /\__  _\ /\  ___\   /\  ___\   
+   \/_/\ \/ \ \  __\   \ \ \_\ \  \/_/\ \/ \ \  __ \  \/_/\ \/ \ \  __\   \ \___  \  
+      \ \_\  \ \_____\  \ \_____\    \ \_\  \ \_\ \_\    \ \_\  \ \_____\  \/\_____\ 
+       \/_/   \/_____/   \/_____/     \/_/   \/_/\/_/     \/_/   \/_____/   \/_____/ 
+\end{verbbox}
+% https://www.topster.de/text-to-ascii/sub-zero.html Banner 3 und zub zero
+
+	\begin{titlepage}
+		
+		\maketitle
+		\thispagestyle{empty} % Don't start page numbers on this page
+		
+		\begin{center}
+			
+			\vspace{1cm}
+			
+			\theverbbox
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.4\linewidth]{Logo.png}
+			\end{figure}
+
+			\large Beschlossen an der Gründungsversammlung vom 16.11.2022.\\
+			\vspace{1em}
+			\large Zuletzt geändert am 11.11.2022.
+			
+			\vspace{1.5cm}
+			
+			\begin{minipage}[t]{0.49\textwidth}
+				\center
+				\rule{5cm}{0.2mm}\\
+				Martin Reichmuth, Präsident
+			\end{minipage}
+			\begin{minipage}[t]{0.49\textwidth}
+				\center
+				\rule{5cm}{0.2mm}\\
+				Jan Würsch, Kassier
+			\end{minipage}
+			
+		\end{center}
+		
+	\end{titlepage}
+	
+	\section{Präambel}
+	And Saint Attila raised the hand grenade up on high, saying, 'O Lord, bless this thy hand grenade, that with it thou mayst blow thine enemies to tiny bits, in thy mercy.' And the Lord did grin. And the people did feast upon the lambs, and sloths, and carp, and anchovies, and orangutans, and breakfast cereals, and fruit bats, and large chulapas. And the Lord spake, saying, 'First shalt thou take out the Holy Pin. Then shalt thou count to three, no more, no less. Three shall be the number thou shalt count, and the number of the counting shall be three. Four shalt thou not count, neither count thou two, excepting that thou then proceed to three. Five is right out. Once the number three, being the third number, be reached, then lobbest thou thy Holy Hand Grenade of Antioch towards thy foe, who, being naughty in My sight, shall snuff it.
+	
+	42
+	
+	\newpage
+	\section{Name und Sitz}
+	
+	\ol
+	\li Unter dem Namen \textit{Think Tank} besteht ein Verein im Sinne von Art. 60
+	ff. ZGB.
+	\li Der Sitz des Vereins ist Stadt Zürich. Für alle Rechtsstreitigkeiten
+	gilt schweizerisches Recht.
+	\lo
+	
+	\section{Name und Logo}
+	
+	\ol
+	\li Name und Logo sind Eigentum des Vereins, sind jedoch bei Beteiligung jeweils zu kennzeichnen.
+	\li Welches Logo verwendet wird ist grundsätzlich dem Projektteam überlassen.
+	\li Das Logo existiert in diversen Formen. Standard wird nur der Text im Logo verändert. Ausnahmen können von Vorstand genehmigt werden.
+	\lo
+
+	\begin{figure}[h]
+	\centering
+	\begin{minipage}[h]{0.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=0.5\linewidth]{Logo.png}
+	\end{minipage}
+	\hspace{.1\linewidth}% Abstand zwischen Bilder
+	\begin{minipage}[h]{0.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=0.5\linewidth]{Logo.ch.png}
+	\end{minipage}
+\end{figure}
+
+	\section{Vereinszweck}
+	\ol
+	\li Der Verein verfolgt folgende Ziele:
+	\ol
+	\li Ausführen / Entwicklung von Projekten jeglicher Art. Diese können von Mitgliedern je nach Bedürfen gestartet und bearbeitet werden, mehr unter Abschnitt 4 - Projekte.
+	\lo
+	\li Der Verein handelt im Sinne des homo rationalis. Nach bestem Wissen und Gewissen.
+	\lo
+	
+	\section{Projekte}
+	\ol
+	\li Projekte können von aktiven Mitglieder eingereicht werden. Es muss Ziel und ein Weg wie dieses Ziel erreicht werden soll definiert werden.
+	\li Über jedes Projekt muss eine Abstimmung erfolgen bevor es ausgeführt werden darf.
+	\ol
+	\li Diese Wahl kann zu jeder Zeit und an jedem Ort durchgeführt werden.
+	\li Jedes Projekt muss 100\% in dieser Abstimmung erreichen, bevor es zur Ausführung kommen kann. Eine einzelne Stimme eines Aktivmitglied vom Think Tank Teutates wird mit 100\% gewertet.
+	\li Jedem Projekt steht die ganze Infrastruktur des Vereins zur Verfügung (Maschinerie, Software, usw.) mit Ausnahme von finanziellen Mitteln.
+	\li Sobald ein Projekt Finanzen des Vereins benötigt, muss es der Vollversammlung vorgelegt werden. Diese muss der finanziellen Unterstützung durch den Verein mit einer einfachem Mehr zustimmen.
+	\lo
+	\li Jedes aktive Mitglied des Vereins kann sich in ein Projekt einbringen und mithelfen dies zu gestalten. Ebenso kann sich ein Mitglied auch aus einem laufenden Projekt zurückziehen.
+	\lo
+	
+	\section{Mitgliedschaft}
+	
+	\ol
+	\li Aktivmitglied mit Stimmberechtigung kann jede natürliche Person werden,
+	die sich mit dem Vereinszweck identifizieren kann.
+	\li Passivmitglied ohne Stimmberechtigung kann jede natürliche und juristische
+	Person werden.
+	\li Aufnahmegesuche sind an ein Vorstandsmitglied zur richten; über die
+	Aufnahme entscheidet der Vorstand.
+	\li Die Mitgliedschaft erlischt
+	\ol
+	\li bei natürlichen Personen durch Austritt, Ausschluss oder Tod
+	\li bei juristischen Personen durch Austritt, Ausschluss oder Auflösung
+	\lo
+	\lo
+		
+	\section{Austritt und Ausschluss}
+	
+	\ol
+	\li Ein Vereinsaustritt ist per Ende des Vereinsjahrs möglich. Das
+	Austrittsschreiben muss schriftlich an den Vorstand gerichtet werden.
+	\li Ein Mitglied kann jederzeit ohne Grundangabe aus dem Verein ausgeschlossen
+	werden. Der Vorstand fällt den Ausschlussentscheid; das Mitglied kann den
+	Ausschlussentscheid an die Vereinsversammlung weiterziehen.
+	\lo
+		
+	\section{Organe des Vereins}
+	
+	\ol
+	\li Die Organe des Vereins sind:
+	\ol
+	\li die Vereinsversammlung
+	\li der Vorstand
+	\lo
+	\lo
+	
+	\section{Die Vereinsversammlung}
+	
+	\ol
+	\li Das oberste Organ des Vereins ist die Vereinsversammlung. Eine ordentliche
+	Vereinsversammlung findet jährlich statt.
+	\li Zur Vereinsversammlung werden die Mitglieder drei Wochen im Voraus
+	unter Beilage der Traktandenliste schriftlich eingeladen.
+	\li Die Vereinsversammlung hat die folgenden unentziehbaren Aufgaben:
+	\ol
+	\li Wahl bzw. Abwahl des Vorstandes
+	\li Festsetzung und Änderung der Statuten
+	\li Wahl über Anschaffungen des Vereins sowie die Zusprechung finanzieller Mittel
+	\li Einführung / Festsetzung der Mitgliederbeiträge
+	\li Behandlung der Ausschlussrekurse	
+	\lo
+	\li An der Vereinsversammlung besitzt jedes Aktivmitglied eine Stimme; die
+	Beschlussfassung erfolgt mit einfachem Mehr. Einzige Ausnahme welche kein Beschluss der Vereinsversammlung benötigt ist die Ausführung von Projekten. 
+	\ol
+	\li Die Wahl resp. Entscheidungen können auch Ausserhalb der Vollversammlung stattfinden.
+	\li Wahlen / Entscheidungen können an der Vollversammlung physisch oder in anderen Kanälen (Whats App, Discord, usw.) erfolgen. Grundlegend gilt: Nur über dringend Notwendige Sachen Ausserhalb der Vollversammlung Abstimmen zu lassen. Was als dringend Angesehen eingestuft wird Entscheidet der Vorstand.
+	\li Gültigkeit einer Wahl / Entscheidung hat nur wenn folgende Kriterien erfüllt sind:
+	\ol
+	\li Jedes Aktivmitglied muss die Möglichkeit haben seine Stimme abzugeben. Bei virtuellen Umfragen / Wahlen müssen alle Aktivmitglieder im Kanal enthalten sein. Ausnahme ist lediglich die jährliche Vollversammlung.
+	\li Jedes Aktivmitglied muss genügend Zeit haben um seine Stimme abzugeben. Standard wird eine Periode von 2 Wochen angesetzt, diese sollte auch nicht unterschritten werden.
+	\lo
+	\li Die Stimmen der Aktivmitglieder welche innerhalb der Frist resp. nicht an der Vollversammlung teilnehmen verfallen.
+	\li Bei Stimmengleichheit entscheidet der Präsident mit Stichentscheid.
+	\lo
+	\li Passivmitglieder werden zur Vereinsversammlung eingeladen, besitzen jedoch
+	kein Stimmrecht.
+	\lo
+	
+	\section{Der Vorstand}
+	
+	\ol
+	\li Der Vorstand besteht aus mindestens zwei Personen, nämlich dem Präsidenten
+	und dem Kassier.
+	\li Der Vorstand vertritt den Verein nach aussen und führt die laufenden
+	Geschäfte.
+	\lo
+		
+	\section{Finanzen}
+	
+	\ol
+	\li \underline{Projekte}
+	\ol
+	\li	Budget wir jeweils pro Projekt separat geführt, falls vorhanden.
+	\li Dies muss bei Projekten welche finanzielle Mittel erhalten / benötigen ein Projekt-Kassier geführt werden. Dieser muss Projekt-Intern ein Budget führen.
+	\li Bei Sponsoring / Spenden für Projekte müssen diese klar und transparent gekennzeichnet sei, sowie in dem Budget des jeweiligen Projektes klar ersichtlich sein.
+	\li Überschüssige finanzielle Mittel werden, sofern ein Projekt abgeschlossen ist, dem Verein (Kassier) für weitere Verwaltung übergeben.
+	\lo
+	\li \underline{Verein}
+	\ol
+	\li Grundsätzlich fallen diese in die Zuständigkeit des Kassier, sobald diese den Verein betreffen.
+	\li Aus Prinzip werden keine Löhne ausbezahlt, das Vermögen des Vereins wird verwendet um Projekte zu finanzieren.
+	\li Es können Spenden / Zahlungen an Organisationen / Vereine gemacht werden. Diese bedürfen die Zustimmung der Vollversammlung. 
+	\lo
+	\lo
+		
+	\section{Unterschrift, Haftung}
+	
+	\ol
+	\li Der Verein wird verpflichtet durch die Einzelunterschrift, ausgenommen das
+	Eingehen von Dauerschuldverhältnissen kollektiv durch den Präsidenten zusammen
+	mit einem weiteren Mitglied des Vorstandes.
+	\li Die Aufnahme von Krediten sowie das Leisten von Bürgschaften bedürfen
+	zusätzlich der Bewilligung durch die Vereinsversammlung.
+	\li Für die Schulden des Vereins haftet nur das Vereinsvermögen. Eine
+	persönliche Haftung der Mitglieder ist ausgeschlossen.
+	\lo
+		
+	\section{Statutenänderungen}
+	
+	\ol
+	\li Die vorliegenden Statuten können abgeändert werden, wenn eine Mehrheit der
+	anwesenden stimmberechtigten Mitglieder dem Änderungsvorschlag zustimmt.
+	\lo
+	
+	\section{Auflösung des Vereins}
+	
+	\ol
+	\li Die Auflösung des Vereins kann an einer Vereinsversammlung mit absoluter
+	Mehrheit der anwesenden stimmberechtigten Mitglieder beschlossen werden.
+	\li Bei einer Auflösung des Vereins fällt das Vereinsvermögen an eine
+	Institution, welche den gleichen oder einen ähnlichen Zweck verfolgt. Gewählt von der Vollversammlung
+	\lo
+	
+	\section{Übergangs- und Vollzugsbestimmungen}
+	
+	\ol
+	\li Diese Statuten sind an der Gründungsversammlung vom 14.11.2022
+	angenommen worden und sind mit diesem Datum in Kraft getreten.
+	\li Bei Unklarheiten über die Auslegung dieser Statuten entscheidet der
+	Vorstand abschliessend.
+	\lo
+	
+\end{document}
